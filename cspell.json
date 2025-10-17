@@ -1,0 +1,17 @@
+{
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/.vscode/**",
+    "**/.git/**",
+    "**/.package.json",
+    "**/.package.lock",
+    "**/pnpm-lock.yaml",
+    "**/pnpm-workspace.yaml",
+    "storybook-static/**",
+    "coverage/**",
+    "public/**",
+    "src/assets/**",
+    "/dist/"
+  ],
+  "words": []
+}
