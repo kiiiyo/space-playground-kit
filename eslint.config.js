@@ -6,6 +6,7 @@ import {
   prettierEslintConfig,
   typescriptEslintConfig,
   reactEslintConfig,
+  storybookEslintConfig,
 } from './configs/eslint/index.js';
 
 export default defineConfig([
@@ -15,10 +16,12 @@ export default defineConfig([
     'build/**',
     'next-env.d.ts',
     // "configs/eslint/*",
-    // "eslint.config.js",
-    // "prettier.config.js",
-    // "lint-staged.config.js",
-    // 'husky/*',
+    'eslint.config.js',
+    'prettier.config.js',
+    'lint-staged.config.js',
+    'husky/*',
+    '!.storybook/**',
+    '!storybook-static/**',
   ]),
 
   // General
@@ -29,7 +32,8 @@ export default defineConfig([
   ...typescriptEslintConfig,
   // React (JSX)
   ...reactEslintConfig,
-
   // Prettier
   ...prettierEslintConfig,
+  // Storybook
+  ...storybookEslintConfig,
 ]);
