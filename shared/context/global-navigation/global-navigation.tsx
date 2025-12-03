@@ -1,3 +1,5 @@
+'use client';
+
 import { createContext, FC, useCallback, useContext, useState } from 'react';
 
 export type GlobalNavigationContextValue = {
