@@ -11,6 +11,13 @@ export default [
         'error',
         { argsIgnorePattern: '^_' },
       ],
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+      '@typescript-eslint/no-empty-function': [
+        'error',
+        {
+          allow: ['arrowFunctions', 'functions', 'methods'],
+        },
+      ],
     },
   },
 ];
