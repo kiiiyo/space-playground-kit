@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "lint:inspect": "npx eslint --inspect-config"
+    "lint:inspect": "npx eslint --inspect-config",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "16.0.1",
@@ -26,6 +27,8 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "prettier": "^3.6.2",
     "tailwindcss": "^4",
     "typescript": "^5",
