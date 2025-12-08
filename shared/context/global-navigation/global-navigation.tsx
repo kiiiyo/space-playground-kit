@@ -24,7 +24,7 @@ export const useGlobalNavigationContext = (): GlobalNavigationContextValue => {
 export const GlobalNavigationProvider: FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [isNavigationOpen, setIsNavigationOpen] = useState(false);
+  const [isNavigationOpen, setIsNavigationOpen] = useState(true);
 
   const onNavigationOpenToggle = useCallback(() => {
     setIsNavigationOpen((prev) => !prev);
