@@ -1,10 +1,3 @@
-import {
-  PanelRightClose,
-  PanelRightOpen,
-  Settings,
-  LogOut,
-} from 'lucide-react';
-
 /**
  * @see https://lucide.dev/icons/
  */
@@ -14,4 +7,10 @@ export {
   PanelRightOpen as PanelRightOpenIcon,
   Settings as SettingsIcon,
   LogOut as LogOutIcon,
-};
+  House as HouseIcon,
+  ChevronUp as ChevronUpIcon,
+  ChevronDown as ChevronDownIcon,
+  TableProperties as TablePropertiesIcon,
+  // FIXME
+  Signpost as SignpostIcon,
+} from 'lucide-react';
