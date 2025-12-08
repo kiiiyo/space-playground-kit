@@ -8,9 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "lint:inspect": "npx eslint --inspect-config",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage",
+    "test:unit": "vitest",
+    "test:unit-ui": "vitest --ui",
+    "test:unit-coverage": "vitest run --coverage",
     "prepare": "husky",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
