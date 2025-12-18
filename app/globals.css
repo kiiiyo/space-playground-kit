@@ -1,8 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --bg-color-body: #ffffff;
-  --bg-image-body: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23eeeeee' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  --bg-color-body: #fff;
+  --bg-image-body: radial-gradient(#e5e7eb 1px, transparent 1px);
+  --bg-size: 16px 16px;
   --default-foreground-color: #171717;
   --default-font-family: Arial, Helvetica, sans-serif, system-ui;
 }
@@ -23,6 +24,7 @@
 body {
   background: var(--bg-color-body);
   background-image: var(--bg-image-body);
+  background-size: var(--bg-size);
   color: var(--default-foreground-color);
   font-family: var(--default-font-family);
 }
