@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Onboarding | Space Playground Kit',
-  description: 'This is an onboarding page.',
+  title: 'Overview | Space Playground Kit',
+  description: 'This is an overview page.',
 };
 
 export default function OnboardingLayout({
   children,
-}: LayoutProps<'/onboarding'>) {
+}: LayoutProps<'/overview'>) {
   return children;
 }

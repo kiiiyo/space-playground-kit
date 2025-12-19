@@ -9,6 +9,7 @@ import {
   ChevronUpIcon,
   ChevronDownIcon,
   TablePropertiesIcon,
+  FileIcon,
 } from '@/shared/components/icon';
 
 //import { useGlobalNavigationContext } from '@/shared/context/global-navigation';
@@ -59,6 +60,7 @@ export function GlobalMenu() {
             </span>
           </span>
         </Link>
+
         <details className="group">
           <summary
             className="hover:bg-gray-100 rounded-sm cursor-pointer list-none grid"
@@ -113,6 +115,20 @@ export function GlobalMenu() {
             </ul>
           </nav>
         </details>
+
+        <Link
+          href="/blank"
+          className="block text-gray-700 hover:bg-gray-100 rounded-sm"
+        >
+          <span className="flex items-center gap-x-1">
+            <span className="w-8 h-8 rounded-md flex items-center justify-center">
+              <FileIcon className="w-4 h-4 text-gray-500" />
+            </span>
+            <span className={`block text-xs ${navigationDisplayStyle}`}>
+              Blank
+            </span>
+          </span>
+        </Link>
       </div>
     </div>
   );

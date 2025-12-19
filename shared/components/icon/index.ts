@@ -11,6 +11,7 @@ export {
   ChevronUp as ChevronUpIcon,
   ChevronDown as ChevronDownIcon,
   TableProperties as TablePropertiesIcon,
+  File as FileIcon,
   // FIXME
   Signpost as SignpostIcon,
 } from 'lucide-react';
