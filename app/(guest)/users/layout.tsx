@@ -5,6 +5,6 @@ export const metadata: Metadata = {
   description: 'Items management page.',
 };
 
-export default function ItemsLayout({ children }: LayoutProps<'/items'>) {
+export default function UsersLayout({ children }: LayoutProps<'/users'>) {
   return children;
 }
