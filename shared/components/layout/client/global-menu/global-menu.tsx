@@ -8,8 +8,9 @@ import {
   PanelRightOpenIcon,
   ChevronUpIcon,
   ChevronDownIcon,
-  TablePropertiesIcon,
   FileIcon,
+  //GiftIcon,
+  UserIcon,
 } from '@/shared/components/icon';
 
 //import { useGlobalNavigationContext } from '@/shared/context/global-navigation';
@@ -68,11 +69,11 @@ export function GlobalMenu() {
           >
             <span className={`flex items-center gap-x-1`}>
               <span className="w-8 h-8 rounded-md flex items-center justify-center">
-                <TablePropertiesIcon className="w-4 h-4 text-gray-500" />
+                <UserIcon className="w-4 h-4 text-gray-500" />
               </span>
 
               <span className={`block text-xs ${navigationDisplayStyle}`}>
-                Tables
+                Users
               </span>
               <span className={`ml-auto mr-1 block ${navigationDisplayStyle}`}>
                 <ChevronDownIcon className="w-4 h-4 text-gray-500 group-open:hidden" />
@@ -84,31 +85,41 @@ export function GlobalMenu() {
             <ul>
               <li>
                 <Link
-                  href="/"
+                  href="/users"
                   className="block text-gray-700 hover:bg-gray-100 rounded-sm"
                 >
                   <span className="flex items-center h-8 pl-9 text-xs">
-                    Type 01
+                    List
                   </span>
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/users/1234567890"
                   className="block text-gray-700 hover:bg-gray-100 rounded-sm"
                 >
                   <span className="flex items-center h-8 pl-9 text-xs">
-                    Type 02
+                    Details
                   </span>
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/users/new"
                   className="block text-gray-700 hover:bg-gray-100 rounded-sm"
                 >
                   <span className="flex items-center h-8 pl-9 text-xs">
-                    Type 03
+                    Create
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/users/1234567890/edit"
+                  className="block text-gray-700 hover:bg-gray-100 rounded-sm"
+                >
+                  <span className="flex items-center h-8 pl-9 text-xs">
+                    Edit
                   </span>
                 </Link>
               </li>
